@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <link rel="stylesheet" href="1.css">
+	 <!-- <script src="Calc.js"></script> -->
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <div class="output">
+      <input id="box"type="text" readonly >
+    </div>
+    <div class="btns">
+    <div class="numbrs">
+      <div class="inline-1">
+        <button id="b7">7</button>
+        <button  id="b8">8</button>
+        <button  id="b9">9</button>
+      </div>
+      <div class="inline-2">
+        <button  id="b4">4</button>
+        <button  id="b5">5</button>
+        <button  id="b6">6</button>
+      </div>
+      <div class="inline-3">
+        <button  id="b1">1</button>
+        <button  id="b2">2</button>
+        <button  id="b3">3</button>
+      </div>
+      <div class="inline-4">
+        <button  id="clear">C</button>
+        <button  id="b0">0</button>
+        <button  id='zap'>,</button>
+      </div>
+    </div>
+   <div id="operator_btns">
+  <button id="plus" onclick="task='+'">+</button> <br>
+  <button id="minus" onclick="task='-'">-</button><br>
+  <button id="times" onclick="task='*'">x</button><br>
+  <button id="divide" onclick="task='/'">:</button><br>
+  </div>
+  </div>
+  <div style="text-align: center;">
+    <button  id='result'>=</button>
+  </div>
+ <script src="Calc.js"></script>
+  </body>
+</html>
